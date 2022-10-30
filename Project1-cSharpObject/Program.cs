@@ -41,12 +41,12 @@ namespace Project1_cSharpObject
                                 new MapLocation(8,5 , map1),
                                 new MapLocation(9,5 , map1),
                         };
-
-
+                //Added an extra comment to the repo
+                //Added an extra comment to the repo
                 //Console.WriteLine(StringToInteger.StringToInt("15"));
-                    
 
-                    var newList = oldList.Where(map => map.X == 7).FirstOrDefault();
+
+                var newList = oldList.Where(map => map.X == 7).FirstOrDefault();
 
 
                 //foreach(var location in newList)
