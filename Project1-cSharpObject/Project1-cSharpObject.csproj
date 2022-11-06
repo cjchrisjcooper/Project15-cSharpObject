@@ -46,6 +46,7 @@
     <Compile Include="Invader.cs" />
     <Compile Include="ITower.cs" />
     <Compile Include="Level.cs" />
+    <Compile Include="ListUtils.cs" />
     <Compile Include="Map.cs" />
     <Compile Include="MapLocation.cs" />
     <Compile Include="Path.cs" />
