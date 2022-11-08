@@ -14,13 +14,27 @@ namespace Project1_cSharpObject
         static void Main(string[] args)
         {
             
-                try
-                {
-                       
+            try
+            {
+                                List<string> groceryList = new List<string>()
+                                {
+                                    "Banana",
+                                    "Oranges",
+                                    "Apples"
+
+                                };
+                groceryList.Add("Potato Chips");
+                groceryList.RemoveAt(0);
+                groceryList.Insert(0, "Chocolate");
+                              
+                                foreach (string item in groceryList)
+                                {
+                                    Console.WriteLine(item);
+                                }
                     
 
 
-                }
+            }
                 catch(ArgumentException ae)
                 {
                         Console.WriteLine(ae.Message);
