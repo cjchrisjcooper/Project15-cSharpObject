@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Project1_cSharpObject
 {
-    public class Student
+    public class Student : IComparable<Student>
     {
         public int Id { get; private set; }
 
@@ -25,6 +25,17 @@ namespace Project1_cSharpObject
             AvarageGrade = averageGrade;
                 
 
+        }
+
+        public int CompareTo(Student that)
+        {
+           int result = this.Name.CompareTo(that.Name);
+
+            if(result == 0)
+            {
+                result = this.Age.CompareTo(that.Age);
+            }
+            return result;
         }
     }
 }

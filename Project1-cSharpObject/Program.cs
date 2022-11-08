@@ -16,20 +16,30 @@ namespace Project1_cSharpObject
             
             try
             {
-                                List<string> groceryList = new List<string>()
+                                List<Student> studentList = new List<Student>()
                                 {
-                                    "Banana",
-                                    "Oranges",
-                                    "Apples"
+                                    new Student(0, "Bob", 15, 'A'),
+                                    new Student(0, "Charlie", 13, 'A'),
+                                    new Student(0, "Bob", 18, 'A'),
+                                    new Student(0, "Ashly", 12, 'A')
 
                                 };
-                groceryList.Add("Potato Chips");
-                groceryList.RemoveAt(0);
-                groceryList.Insert(0, "Chocolate");
-                              
-                                foreach (string item in groceryList)
+                                studentList.Sort();
+
+
+                                Student student2 = new Student(0, "Chris", 16, 'C');
+                                
+                                int index = studentList.BinarySearch(student2);
+
+                                if(index < 0)
                                 {
-                                    Console.WriteLine(item);
+                                    studentList.Insert(~index, student2);
+                                }
+
+
+                                foreach (Student student in studentList)
+                                {
+                                    Console.WriteLine($"Name:  {student.Name}  Age:  {student.Age}");
                                 }
                     
 
