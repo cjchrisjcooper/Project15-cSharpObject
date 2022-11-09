@@ -49,6 +49,7 @@
     <Compile Include="ListUtils.cs" />
     <Compile Include="Map.cs" />
     <Compile Include="MapLocation.cs" />
+    <Compile Include="MorseCodeTranslater.cs" />
     <Compile Include="Path.cs" />
     <Compile Include="Point.cs" />
     <Compile Include="Program.cs" />
